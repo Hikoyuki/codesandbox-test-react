@@ -15,8 +15,11 @@ const onClickAdd = () => {
   
   //button(完了)タグ生成
   const completeButton = document.createElement("button");
-  completeButton.innerText = "完sss了";
-  console.log(completeButton);
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", ()  => {
+    // 押された削除ボタンの親タグ(div)を未完了リストから削除
+    alert("完了")
+  });
   
   //button(削除)タグ生成
   const deleteButton = document.createElement("button");
